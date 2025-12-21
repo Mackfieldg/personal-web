@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mackfield George — CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .cv-container{max-width:800px;margin:2rem auto;padding:1.25rem}
+    .cv-header{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+    .cv-header h2{color:var(--text)}
+    .cv-section{margin-top:1rem;padding-top:0.75rem;border-top:1px dashed rgba(0,0,0,0.06)}
+    .cv-list{margin-top:0.5rem}
+    .cv-list li{margin-bottom:0.5rem}
+    /* Print: show only the CV container and its contents */
+    @media print{
+      body{background:white;color:black}
+      /* hide everything by default */
+      body *{visibility:hidden}
+      /* make the cv container visible */
+      .cv-container, .cv-container *{visibility:visible}
+      /* hide elements explicitly marked as not-for-print */
+      .no-print, .no-print *{visibility:hidden !important; display:none !important}
+      .cv-container{position:relative;left:0;top:0;width:100%;box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container cv-container panel">
+    <div class="cv-header">
+      <div style="display:flex;align-items:center;gap:1rem">
+        <div class="avatar resume-avatar" id="resume-avatar">
+          <img id="resume-avatar-img" src="Profile.png" alt="Profile photo" onerror="this.style.display='none'">
+        </div>
+        <div>
+          <h2>Mackfield George</h2>
+          <div>Msundwe Post Office Box 36, Namitete, Lilongwe</div>
+          <div>mackfieldgeorge@gmail.com</div>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div>BSc Biological Sciences, UNIMA (2026)</div>
+        <div>Certificates: Data Collection & Statistical Analysis (R, STATA, KOBO, SPSS), Good Clinical Practices</div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h3>Education</h3>
+      <ul class="cv-list">
+        <li>Malawi Secondary Certificate of Education — 2021</li>
+        <li>Certificate in Data Collection and Statistical Analysis (R, STATA, KOBO TOOLBOX, SPSS) — 2025</li>
+        <li>Good Clinical Practices (GCP) Certification — 2025</li>
+        <li>Bachelors Degree in Biological Sciences, University Of Malawi — 2026</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h3>Experience</h3>
+      <ul class="cv-list">
+        <li>Agricultural Extension Developer Coordinator (AEDC), Enumerator — 2024</li>
+        <li>Kamuzu Central Hospital (KCH), Laboratory Intern — 2025</li>
+        <li>Central Veterinary Laboratories (CVL), Laboratory Intern — 2025</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h3>Skills</h3>
+      <ul class="cv-list">
+        <li>Data collection & statistical analysis: R, STATA, KOBO TOOLBOX, SPSS</li>
+        <li>Website development (HTML, CSS, JavaScript)</li>
+        <li>Scientific writing and communication</li>
+        <li>Clinical research</li>
+        <li>Python programming</li>
+        <li>Digital registration, profiling & geo-mapping</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h3>Contact</h3>
+      <p>mackfieldgeorge@gmail.com</p>
+    </div>
+
+    <div class="no-print" style="margin-top:1rem;display:flex;gap:0.5rem;justify-content:flex-end">
+      <a href="#" onclick="window.print();return false" class="btn btn-ghost">Print / Save as PDF</a>
+      <a href="personal.html" class="btn btn-primary">Back to Portfolio</a>
+    </div>
+  </div>
+</body>
+</html>
